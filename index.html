@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SherwinBush</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="navigation.js"></script>
+  <script src="contact.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="animate.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+      <div class='menu'>
+        <a href="#landing-section">HOME</a>
+        <a href="#hero-section">ABOUT</a>
+        <a href="#social-section">SOCIAL</a>
+        <a href="#portfolio-section">WORK</a>
+        <a href="#contact-section">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="landing" id="landing-section">
+      <div class="landing-content">
+        <h1>HELLO!!!</h1>
+        <h2 class="animated-text">
+          <span class="typing-text">I am Sherwin George.... </span>
+        </h2>
+        <p class="animated-hero-subtitle">
+          <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="hero" id="hero-section">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://image.shutterstock.com/image-photo/diverse-beauty-graces-california-coast-260nw-1005638995.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="https://image.shutterstock.com/image-photo/impressive-autumn-landscape-during-sunset-260nw-1459051037.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="https://image.shutterstock.com/image-photo/portrait-asian-woman-make-ghostscary-260nw-1927790966.jpg" style="width:100%">
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1>Welcome</h1>
+        <p>I'm a web developer and designer based in the Philippines.</p>
+        <a href="#" id="learn-more" class="Learn-more">About Me</a>
+      </div>
+      <div id="bio" class="hidden"></div>
+    </section>
+    <script src="backgroundCarousel.js"></script>
+    <script src="profileScript.js"></script>
+    <section class="repositories" id="portfolio-section">
+      <div class="section-bg">
+        <h2>PORTFOLIO</h2>
+        <div id="carousel" class="carousel">
+          <div class="carousel-track-container">
+            <div id="repositories" class="carousel-track">
+              <!-- Repositories will be inserted here -->
+            </div>
+          </div>
+          <button id="prevBtn" class="carousel-btn"><</button>
+          <button id="nextBtn" class="carousel-btn">></button>
+        </div>
+        <button id="see-more-button">See more -></button>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact-section">
+      <h2>Email Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Mail</button>
+      </form>
+    </section>
+    <section class="social" id="social-section">
+      <h2>Connect with me</h2>
+      <ul class="social-links">
+        <li><a href="https://web.facebook.com/sherwingeorgebushsajulga1" target="_blank"><i
+              class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://github.com/egberthff" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div>
+    </div>
+  </footer>
+</body>
+
+</html>
