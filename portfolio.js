@@ -107,7 +107,7 @@
    repositoryOwnerElement.innerHTML = `Owner: <img src="${repository.owner.avatar_url}" alt="Owner avatar" style="height: 20px; width: 20px; border-radius: 5px; margin-left: 2px; margin-top: 4px"> ${repository.owner.login}`;
    repositoryInfoElement.appendChild(repositoryOwnerElement);
    const repositoryDownloadElement = document.createElement('a');
-   repositoryDownloadElement.href = repository.downloadUrl;
+   repositoryDownloadElement.href = repository.clone_url;
    repositoryDownloadElement.textContent = 'Download';
    repositoryInfoElement.appendChild(repositoryDownloadElement);
    repositoryElement.appendChild(repositoryInfoElement);
